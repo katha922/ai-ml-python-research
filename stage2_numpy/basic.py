@@ -35,6 +35,7 @@ print(np.arange(1, 10)) #1-9
 print(np.arange(1, 10, 2)) #1 3 5 7 9
 
 arr = np.array([[1,2,3],[4,5,6]])
+print('here')
 print(arr.shape)
 print(arr.size)
 print(arr.dtype)

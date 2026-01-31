@@ -1,0 +1,47 @@
+import numpy as np
+
+arr = np.array([10, 25, 30, 45, 50, 65, 70])
+
+print("Original Array:")
+print(arr)
+condition = arr > 40
+print(condition)
+result = arr[condition]
+print(result)
+condition2 = (arr>20) & (arr<50)
+print(condition2)
+result2 = arr[condition2]
+print(result2)
+
+scores = np.array([45, 67, 89, 32])
+status = np.where(scores>=50,"pass","fail")
+print(status)
+
+arr = np.array([40, 10, 30, 20])
+sorting=np.sort(arr)
+print(sorting)
+#index sort
+indexSort=np.argsort(arr)
+print(indexSort)
+
+#name + score alignment
+names = np.array(["A", "B", "C", "D"])
+scores2 = np.array([88, 92, 79, 95])
+
+idx = np.argsort(scores2)
+print(names[idx])
+print(scores2[idx])
+
+#unique
+labels = np.array([1, 2, 2, 3, 3, 3])
+uni=np.unique(labels)
+print(uni)
+
+#Stacking
+a = np.array([[1, 2],
+              [3, 4]])
+
+b = np.array([[5, 6],
+              [7, 8]])
+print(np.vstack((a, b))) #row wise incresing
+print(np.hstack((a, b))) #column wise incresing
